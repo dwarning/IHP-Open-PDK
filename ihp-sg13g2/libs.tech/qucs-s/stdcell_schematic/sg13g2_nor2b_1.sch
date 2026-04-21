@@ -1,6 +1,6 @@
 <Qucs Schematic 25.2.0>
 <Properties>
-  <View=-405,-219,2306,1348,0.676385,125,87>
+  <View=298,177,1221,863,0.676385,0,0>
   <Grid=5,5,1>
   <DataSet=sg13g2_nor2b_1.dat>
   <DataDisplay=sg13g2_nor2b_1.dpl>
@@ -14,11 +14,25 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
-  <.PortSym 40 20 1 0 Y>
-  <.PortSym 40 60 2 0 A>
-  <.PortSym 40 100 3 0 B_N>
-  <.PortSym 40 140 4 0 VDD>
-  <.PortSym 40 180 5 0 VSS>
+  <.PortSym 30 0 1 180 Y>
+  <Text 30 3 10 #800000 0 "Y">
+  <.PortSym -30 -10 2 0 A>
+  <Text -30 -7 10 #800000 0 "A">
+  <.PortSym -30 10 3 0 B_N>
+  <Text -34 16 10 #800000 0 "B-N">
+  <Line 22 0 8 0 #000080 2 1>
+  <Line -30 10 5 0 #000080 2 1>
+  <Line -20 -17 10 0 #000080 2 1>
+  <Line -20 17 10 0 #000080 2 1>
+  <Line -30 -10 11 0 #000080 2 1>
+  <EArc 11 5 10 -10 0 5760 #000080 2 1>
+  <EArc -81 35 65 -70 5327 871 #000080 2 1>
+  <EArc -36 38 50 -55 493 862 #000080 2 1>
+  <EArc -36 17 50 -55 4407 888 #000080 2 1>
+  <EArc -24 13 6 -6 0 5760 #000080 2 1>
+  <.ID -5 30 "NOR_B">
+  <.PortSym -15 -40 4 0 VDD>
+  <.PortSym -15 45 5 0 VSS>
 </Symbol>
 <Components>
   <Port Y 1 1015 505 -23 12 0 2 "1" 1 "out" 0>

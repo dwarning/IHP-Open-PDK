@@ -14,12 +14,27 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
-  <.PortSym 40 20 1 0 Y>
-  <.PortSym 40 60 2 0 A>
-  <.PortSym 40 100 3 0 B>
-  <.PortSym 40 140 4 0 C>
-  <.PortSym 40 180 5 0 VDD>
-  <.PortSym 40 220 6 0 VSS>
+  <.PortSym 30 -10 1 180 Y>
+  <Text 30 -7 10 #800000 0 "Y">
+  <.PortSym -30 -30 2 0 A>
+  <Text -30 -27 10 #800000 0 "A">
+  <.PortSym -30 -10 3 0 B>
+  <Text -30 -7 10 #800000 0 "B">
+  <.PortSym -30 10 4 0 C>
+  <Text -30 13 10 #800000 0 "C">
+  <Line -18 -30 -12 0 #000080 2 1>
+  <Line -15 -10 -15 0 #000080 2 1>
+  <Line -18 10 -12 0 #000080 2 1>
+  <Line 25 -10 5 0 #000080 2 1>
+  <Line -20 20 10 0 #000080 2 1>
+  <Line -10 -40 -10 0 #000080 2 1>
+  <EArc -105 53 90 -126 5311 898 #000080 2 1>
+  <EArc -42 20 60 -92 4330 1047 #000080 2 1>
+  <EArc -42 52 60 -92 400 1047 #000080 2 1>
+  <EArc 15 -5 10 -10 0 5760 #000080 2 1>
+  <.ID -5 30 "NOR">
+  <.PortSym -15 -60 5 0 VDD>
+  <.PortSym -15 40 6 0 VSS>
 </Symbol>
 <Components>
   <Port Y 1 985 625 -23 12 0 2 "1" 1 "out" 0>
