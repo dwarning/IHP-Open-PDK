@@ -14,7 +14,19 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
- 
+  <.PortSym 30 0 1 180 Y>
+  <Text 28 3 10 #800000 0 "Y">
+  <.PortSym -30 0 2 0 A>
+  <Text -30 3 10 #800000 0 "A">
+  <Line -15 0 -15 0 #000080 2 1>
+  <Line -15 -15 25 15 #000080 2 1>
+  <Line 10 0 -25 15 #000080 2 1>
+  <Line -15 15 0 -30 #000080 2 1>
+  <Line 30 0 -9 0 #000080 2 1>
+  <EArc 10 5 10 -10 0 5760 #000080 2 1>
+  <.ID 0 25 "INV">
+  <.PortSym -10 -40 3 0 VDD>
+  <.PortSym -10 45 4 0 VSS>
 </Symbol>
 <Components>
   <Port Y 1 850 505 -23 12 0 2 "1" 1 "out" 0>
