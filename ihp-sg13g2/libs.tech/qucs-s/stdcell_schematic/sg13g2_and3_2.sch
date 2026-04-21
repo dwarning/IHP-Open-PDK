@@ -1,6 +1,6 @@
 <Qucs Schematic 25.2.0>
 <Properties>
-  <View=244,195,1265,983,0.848297,0,120>
+  <View=198,197,1309,843,1.35604,0,0>
   <Grid=5,5,1>
   <DataSet=sg13g2_and3_2.dat>
   <DataDisplay=sg13g2_and3_2.dpl>
@@ -14,7 +14,25 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
-
+  <.PortSym 30 0 1 180 X>
+  <Text 30 3 10 #800000 0 "X">
+  <.PortSym -30 -20 2 0 A>
+  <Text -30 -17 10 #800000 0 "A">
+  <.PortSym -30 0 3 0 B>
+  <Text -30 3 10 #800000 0 "B">
+  <.PortSym -30 20 4 0 C>
+  <Text -30 23 10 #800000 0 "C">
+  <Line -15 -30 0 60 #000080 2 1>
+  <Line -15 30 15 0 #000080 2 1>
+  <Line 0 -30 -15 0 #000080 2 1>
+  <Line -15 -20 -15 0 #000080 2 1>
+  <Line -15 0 -15 0 #000080 2 1>
+  <Line -15 20 -15 0 #000080 2 1>
+  <Line 30 0 -10 0 #000080 2 1>
+  <EArc -20 30 40 -60 4320 2880 #000080 2 1>
+  <.ID 5 40 "AND" "1===">
+  <.PortSym -5 -50 5 0 VDD>
+  <.PortSym -5 50 6 0 VSS>
 </Symbol>
 <Components>
   <Port X 1 1080 495 -23 12 0 2 "1" 1 "out" 0>

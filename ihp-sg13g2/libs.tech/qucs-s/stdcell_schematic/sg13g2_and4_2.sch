@@ -14,13 +14,28 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
-  <.PortSym 40 20 1 0 X>
-  <.PortSym 40 60 2 0 A>
-  <.PortSym 40 100 3 0 B>
-  <.PortSym 40 140 4 0 C>
-  <.PortSym 40 180 5 0 D>
-  <.PortSym 40 220 6 0 VDD>
-  <.PortSym 40 260 7 0 VSS>
+  <.PortSym 40 -10 1 180 X>
+  <Text 40 -7 10 #800000 0 "X">
+  <.PortSym -30 -40 2 0 A>
+  <Text -30 -37 10 #800000 0 "A">
+  <.PortSym -30 -20 3 0 B>
+  <Text -30 -17 10 #800000 0 "B">
+  <.PortSym -30 0 4 0 C>
+  <Text -30 3 10 #800000 0 "C">
+  <.PortSym -30 20 5 0 D>
+  <Text -30 23 10 #800000 0 "D">
+  <Line -15 25 0 -70 #000080 2 1>
+  <Line -15 -45 20 0 #000080 2 1>
+  <Line 5 25 -20 0 #000080 2 1>
+  <Line -15 -40 -15 0 #000080 2 1>
+  <Line -15 -20 -15 0 #000080 2 1>
+  <Line -15 0 -15 0 #000080 2 1>
+  <Line -15 20 -15 0 #000080 2 1>
+  <Line 30 -10 10 0 #000080 2 1>
+  <EArc -20 25 50 -70 4320 2880 #000080 2 1>
+  <.ID 9 40 "AND">
+  <.PortSym 0 -75 6 0 VDD>
+  <.PortSym 0 55 7 0 VSS>
 </Symbol>
 <Components>
   <Port X 1 1235 490 -23 12 0 2 "1" 1 "out" 0>
