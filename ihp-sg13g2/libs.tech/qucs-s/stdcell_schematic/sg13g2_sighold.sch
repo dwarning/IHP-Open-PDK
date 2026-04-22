@@ -1,6 +1,6 @@
 <Qucs Schematic 25.2.0>
 <Properties>
-  <View=339,169,2069,1203,1.31311,20,0>
+  <View=339,207,1181,833,0.741214,0,0>
   <Grid=5,5,1>
   <DataSet=sg13g2_sighold.dat>
   <DataDisplay=sg13g2_sighold.dpl>
@@ -14,9 +14,16 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
-  <.PortSym 40 20 1 0 SH>
-  <.PortSym 40 60 2 0 VDD>
-  <.PortSym 40 100 3 0 VSS>
+  <.PortSym -30 -10 1 0 SH>
+  <Text -30 -7 10 #800000 0 "SH">
+  <Line -30 -10 20 0 #000080 2 1>
+  <Line -10 10 40 0 #000080 2 1>
+  <Line -10 -30 40 0 #000080 2 1>
+  <Line -10 10 0 -40 #000080 2 1>
+  <Line 30 10 0 -40 #000080 2 1>
+  <.ID 30 20 "SIGHOLD">
+  <.PortSym 10 -50 2 0 VDD>
+  <.PortSym 15 30 3 0 VSS>
 </Symbol>
 <Components>
   <Port SH 1 725 525 -23 12 0 0 "1" 1 "inout" 0>

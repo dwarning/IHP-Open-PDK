@@ -1,6 +1,6 @@
 <Qucs Schematic 25.2.0>
 <Properties>
-  <View=208,169,1871,1120,1.24422,27,0>
+  <View=392,247,1126,793,0.849817,0,0>
   <Grid=5,5,1>
   <DataSet=sg13g2_tielo.dat>
   <DataDisplay=sg13g2_tielo.dpl>
@@ -14,9 +14,15 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
-  <.PortSym 40 20 1 0 L_LO>
-  <.PortSym 40 60 2 0 VDD>
-  <.PortSym 40 100 3 0 VSS>
+  <.PortSym 0 0 1 0 L_LO>
+  <Text 5 -3 10 #800000 0 "L-LO">
+  <Line -10 10 20 0 #000080 2 1>
+  <Line 0 0 0 10 #000080 2 1>
+  <Line -6 13 13 0 #000080 2 1>
+  <Line -2 16 5 0 #000080 2 1>
+  <.ID -5 25 "TIELO">
+  <.PortSym -20 -35 2 0 VDD>
+  <.PortSym -20 45 3 0 VSS>
 </Symbol>
 <Components>
   <Port L_LO 1 1000 495 -23 12 0 2 "1" 1 "out" 0>

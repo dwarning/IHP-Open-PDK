@@ -1,6 +1,6 @@
 <Qucs Schematic 25.2.0>
 <Properties>
-  <View=-589,-342,3327,1936,0.384543,0,0>
+  <View=260,86,2093,1448,0.340797,0,0>
   <Grid=5,5,1>
   <DataSet=sg13g2_slgcp_1.dat>
   <DataDisplay=sg13g2_slgcp_1.dpl>
@@ -14,12 +14,37 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
-  <.PortSym 40 20 1 0 GCLK>
-  <.PortSym 40 60 2 0 CLK>
-  <.PortSym 40 100 3 0 GATE>
-  <.PortSym 40 140 4 0 SCE>
-  <.PortSym 40 180 5 0 VDD>
-  <.PortSym 40 220 6 0 VSS>
+  <.PortSym 90 -30 1 180 GCLK>
+  <Text 90 -27 10 #800000 0 "GCLK">
+  <.PortSym -30 10 2 0 CLK>
+  <Text -30 13 10 #800000 0 "CLK">
+  <.PortSym -30 -50 3 0 GATE>
+  <Text -45 -47 10 #800000 0 "GATE">
+  <.PortSym -30 -30 4 0 SCE>
+  <Text -35 -27 10 #800000 0 "SCE">
+  <Text 2 -7 10 #000080 90 "D-Latch">
+  <Line -10 -50 -20 0 #000080 2 1>
+  <Line -30 10 67 0 #000080 2 1>
+  <Line 37 10 0 -30 #000080 2 1>
+  <Line -10 -60 0 60 #000080 2 1>
+  <Line -10 0 40 0 #000080 2 1>
+  <Line 30 0 0 -60 #000080 2 1>
+  <Line 30 -60 -40 0 #000080 2 1>
+  <Line -20 -10 4 0 #000080 2 1>
+  <Line -20 -10 0 20 #000080 2 1>
+  <Line -10 -30 -20 0 #000080 2 1>
+  <EArc -16 -7 6 -6 0 5760 #000080 2 1>
+  <Line 45 -45 0 30 #000080 2 1>
+  <Line 45 -15 20 0 #000080 2 1>
+  <Line 65 -45 -20 0 #000080 2 1>
+  <Line 45 -40 -15 0 #000080 2 1>
+  <Line 45 -20 -8 0 #000080 2 1>
+  <Line 80 -30 10 0 #000080 2 1>
+  <Line 85 -30 -5 0 #000080 2 1>
+  <EArc 50 -15 30 -30 4320 2880 #000080 2 1>
+  <.ID 15 25 "SGCLK" "1===">
+  <.PortSym 0 -80 5 0 VDD>
+  <.PortSym 0 45 6 0 VSS>
 </Symbol>
 <Components>
   <Port GCLK 1 2020 740 -23 12 0 2 "1" 1 "out" 0>

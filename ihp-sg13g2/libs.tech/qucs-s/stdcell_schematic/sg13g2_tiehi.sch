@@ -1,6 +1,6 @@
 <Qucs Schematic 25.2.0>
 <Properties>
-  <View=33,34,1883,1046,0.865672,0,0>
+  <View=399,252,1120,788,0.865672,0,0>
   <Grid=5,5,1>
   <DataSet=sg13g2_tiehi.dat>
   <DataDisplay=sg13g2_tiehi.dpl>
@@ -14,9 +14,13 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
-  <.PortSym 40 20 1 0 L_HI>
-  <.PortSym 40 60 2 0 VDD>
-  <.PortSym 40 100 3 0 VSS>
+  <.PortSym -10 0 1 0 L_HI>
+  <Text -5 -10 10 #800000 0 "L-HI">
+  <Line -20 -15 20 0 #000080 2 1>
+  <Line -10 -15 0 15 #000080 2 1>
+  <.ID 5 15 "TIEHI">
+  <.PortSym -30 -35 2 0 VDD>
+  <.PortSym -30 40 3 0 VSS>
 </Symbol>
 <Components>
   <Port L_HI 1 960 400 -23 12 0 2 "1" 1 "out" 0>
@@ -58,7 +62,7 @@
   <910 300 910 355 "" 0 0 0 "">
   <720 390 720 640 "" 0 0 0 "">
   <720 640 770 640 "" 0 0 0 "">
-  <640 590 640 360 "" 0 0 0 "">
+  <640 360 640 590 "" 0 0 0 "">
   <640 360 690 360 "" 0 0 0 "">
 </Wires>
 <Diagrams>
