@@ -1,6 +1,6 @@
 <Qucs Schematic 25.2.0>
 <Properties>
-  <View=-940,-198,2291,1664,0.569241,331,84>
+  <View=200,85,2009,1429,0.345324,0,0>
   <Grid=5,5,1>
   <DataSet=sg13g2_dllr_1.dat>
   <DataDisplay=sg13g2_dllr_1.dpl>
@@ -14,13 +14,31 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
-  <.PortSym 40 20 1 0 Q>
-  <.PortSym 40 60 2 0 Q_N>
-  <.PortSym 40 100 3 0 D>
-  <.PortSym 40 140 4 0 GATE_N>
-  <.PortSym 40 180 5 0 RESET_B>
-  <.PortSym 40 220 6 0 VDD>
-  <.PortSym 40 260 7 0 VSS>
+  <.PortSym 60 -40 1 180 Q>
+  <Text 28 -46 10 #800000 0 "Q">
+  <.PortSym 60 0 2 180 Q_N>
+  <Text 18 -6 10 #800000 0 "Q-N">
+  <.PortSym -40 -40 3 0 D>
+  <Text -17 -46 10 #800000 0 "D">
+  <.PortSym -40 0 4 180 GATE_N>
+  <Text -17 -5 10 #800000 0 "GATE-N">
+  <.PortSym 10 40 5 180 RESET_B>
+  <Text -8 7 10 #800000 0 "RESET-B">
+  <Line 40 -40 20 0 #000080 2 1>
+  <Line -40 -40 20 0 #000080 2 1>
+  <Line -20 20 0 -80 #000080 2 1>
+  <Line 40 20 0 -80 #000080 2 1>
+  <Line -20 20 60 0 #000080 2 1>
+  <Line -20 -60 60 0 #000080 2 1>
+  <Line 10 40 0 -10 #000080 2 1>
+  <EArc 5 30 10 -10 0 5760 #000080 2 1>
+  <Line 50 0 10 0 #000080 2 1>
+  <EArc 40 5 10 -10 0 5760 #000080 2 1>
+  <Line -40 0 10 0 #000080 2 1>
+  <EArc -30 5 10 -10 0 5760 #000080 2 1>
+  <.ID 20 57 "DLLR">
+  <.PortSym -10 -75 6 0 VDD>
+  <.PortSym -5 65 7 0 VSS>
 </Symbol>
 <Components>
   <Port Q 1 1670 720 -23 12 1 2 "1" 1 "out" 0>
@@ -231,7 +249,7 @@
   <1380 580 1470 580 "" 0 0 0 "">
   <1380 805 1400 805 "" 0 0 0 "">
   <860 380 1030 380 "" 0 0 0 "">
-  <860 495 860 380 "" 0 0 0 "">
+  <860 380 860 495 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>

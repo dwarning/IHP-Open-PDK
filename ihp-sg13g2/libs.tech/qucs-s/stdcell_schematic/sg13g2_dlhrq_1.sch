@@ -1,6 +1,6 @@
 <Qucs Schematic 25.2.0>
 <Properties>
-  <View=-1083,-451,3031,1558,0.610286,365,162>
+  <View=5,-35,1504,1078,0.416834,0,0>
   <Grid=5,5,1>
   <DataSet=sg13g2_dlhrq_1.dat>
   <DataDisplay=sg13g2_dlhrq_1.dpl>
@@ -14,12 +14,26 @@
   <FrameText3=Revision: 1.0>
 </Properties>
 <Symbol>
-  <.PortSym 40 20 1 0 Q>
-  <.PortSym 40 60 2 0 D>
-  <.PortSym 40 100 3 0 GATE>
-  <.PortSym 40 140 4 0 RESET_B>
-  <.PortSym 40 180 5 0 VDD>
-  <.PortSym 40 220 6 0 VSS>
+  <.PortSym 60 -40 1 180 Q>
+  <Text 28 -46 10 #800000 0 "Q">
+  <.PortSym -40 -40 2 0 D>
+  <Text -17 -46 10 #800000 0 "D">
+  <.PortSym -40 0 3 180 GATE>
+  <Text -17 -5 10 #800000 0 "GATE">
+  <.PortSym 10 40 4 180 RESET_B>
+  <Text -8 7 10 #800000 0 "RESET-B">
+  <Line 40 -40 20 0 #000080 2 1>
+  <Line -40 -40 20 0 #000080 2 1>
+  <Line -20 20 0 -80 #000080 2 1>
+  <Line 40 20 0 -80 #000080 2 1>
+  <Line -20 20 60 0 #000080 2 1>
+  <Line -20 -60 60 0 #000080 2 1>
+  <Line 10 40 0 -10 #000080 2 1>
+  <EArc 5 30 10 -10 0 5760 #000080 2 1>
+  <Line -40 0 20 0 #000080 2 1>
+  <.ID 27 55 "DLHRQ">
+  <.PortSym -15 -75 5 0 VDD>
+  <.PortSym -10 65 6 0 VSS>
 </Symbol>
 <Components>
   <Port Q 1 1435 485 -23 12 1 2 "1" 1 "out" 0>
