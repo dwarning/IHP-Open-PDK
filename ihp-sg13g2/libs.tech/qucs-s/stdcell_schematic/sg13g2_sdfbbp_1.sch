@@ -46,7 +46,7 @@
   <Text 0 -105 10 #800000 0 "SET-B">
   <Line 10 -120 0 -10 #000080 2 1>
   <EArc 5 -110 10 -10 0 5760 #000080 2 1>
-  <.ID 27 30 "SDFFB">
+  <.ID 27 30 SDFFB>
   <.PortSym -20 -155 9 0 VDD>
   <.PortSym -10 50 10 0 VSS>
 </Symbol>

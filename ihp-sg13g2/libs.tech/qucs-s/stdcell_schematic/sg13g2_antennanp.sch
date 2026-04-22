@@ -27,7 +27,7 @@
   <Line 20 -10 -15 -7 #000080 2 1>
   <Line 20 -10 -15 7 #000080 2 1>
   <Line 5 -3 0 -14 #000080 2 1>
-  <.ID 5 15 "ANTENNA">
+  <.ID 5 15 ANTENNA>
   <.PortSym -5 -45 2 0 VDD>
   <.PortSym -5 25 3 0 VSS>
 </Symbol>

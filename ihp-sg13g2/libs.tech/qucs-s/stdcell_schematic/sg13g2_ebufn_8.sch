@@ -28,7 +28,7 @@
   <Line -15 15 0 -30 #000080 2 1>
   <Line 30 0 -15 0 #000080 2 1>
   <EArc -3 -8 10 -10 0 5760 #000080 2 1>
-  <.ID 5 25 "EBUFN">
+  <.ID 5 25 EBUFN>
   <.PortSym -5 -55 4 0 VDD>
   <.PortSym -10 35 5 0 VSS>
 </Symbol>

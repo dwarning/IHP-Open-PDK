@@ -39,7 +39,7 @@
   <Line 60 -90 -15 0 #000080 2 1>
   <Line 10 20 0 -10 #000080 2 1>
   <EArc 5 10 10 -10 0 5760 #000080 2 1>
-  <.ID 25 26 "SDFFQ">
+  <.ID 25 26 SDFFQ>
   <.PortSym -25 -125 7 0 VDD>
   <.PortSym -10 45 8 0 VSS>
 </Symbol>

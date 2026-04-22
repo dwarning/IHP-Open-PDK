@@ -23,7 +23,7 @@
   <Line 15 0 -30 15 #000080 2 1>
   <Line -15 15 0 -30 #000080 2 1>
   <Line 30 0 -15 0 #000080 2 1>
-  <.ID 10 20 "DLYGATE4SD">
+  <.ID 10 20 DLYGATE4SD>
   <.PortSym -5 -35 3 0 VDD>
   <.PortSym -5 35 4 0 VSS>
 </Symbol>

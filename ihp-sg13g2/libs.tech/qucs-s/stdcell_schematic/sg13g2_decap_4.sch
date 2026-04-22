@@ -36,7 +36,7 @@
   <Line 8 -5 4 0 #000080 2 1>
   <Line 8 -6 4 0 #000080 2 1>
   <Line 8 -7 4 0 #000080 2 1>
-  <.ID 25 30 "DECAP">
+  <.ID 25 30 DECAP>
   <.PortSym 5 -60 1 0 VDD>
   <.PortSym 10 40 2 0 VSS>
 </Symbol>

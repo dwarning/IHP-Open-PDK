@@ -29,7 +29,7 @@
   <Line 30 0 -9 0 #000080 2 1>
   <EArc 10 5 10 -10 0 5760 #000080 2 1>
   <EArc -5 -7 10 -10 0 5760 #000080 2 1>
-  <.ID 5 20 "EINVN">
+  <.ID 5 20 EINVN>
   <.PortSym -5 -55 4 0 VDD>
   <.PortSym -10 30 5 0 VSS>
 </Symbol>

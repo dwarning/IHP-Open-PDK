@@ -21,7 +21,7 @@
   <Line -10 -30 40 0 #000080 2 1>
   <Line -10 10 0 -40 #000080 2 1>
   <Line 30 10 0 -40 #000080 2 1>
-  <.ID 30 20 "SIGHOLD">
+  <.ID 30 20 SIGHOLD>
   <.PortSym 10 -50 2 0 VDD>
   <.PortSym 15 30 3 0 VSS>
 </Symbol>

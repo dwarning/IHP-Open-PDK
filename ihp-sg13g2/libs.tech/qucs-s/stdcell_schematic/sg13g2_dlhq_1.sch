@@ -27,7 +27,7 @@
   <Line -20 20 60 0 #000080 2 1>
   <Line -20 -60 60 0 #000080 2 1>
   <Line -40 0 20 0 #000080 2 1>
-  <.ID 18 28 "DLHQ">
+  <.ID 18 28 DLHQ>
   <.PortSym -15 -80 4 0 VDD>
   <.PortSym -15 40 5 0 VSS>
 </Symbol>

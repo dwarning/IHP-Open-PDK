@@ -20,7 +20,7 @@
   <Line 0 0 0 10 #000080 2 1>
   <Line -6 13 13 0 #000080 2 1>
   <Line -2 16 5 0 #000080 2 1>
-  <.ID -5 25 "TIELO">
+  <.ID -5 25 TIELO>
   <.PortSym -20 -35 2 0 VDD>
   <.PortSym -20 45 3 0 VSS>
 </Symbol>

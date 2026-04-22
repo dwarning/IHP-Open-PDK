@@ -18,7 +18,7 @@
   <Text -5 -10 10 #800000 0 "L-HI">
   <Line -20 -15 20 0 #000080 2 1>
   <Line -10 -15 0 15 #000080 2 1>
-  <.ID 5 15 "TIEHI">
+  <.ID 5 15 TIEHI>
   <.PortSym -30 -35 2 0 VDD>
   <.PortSym -30 40 3 0 VSS>
 </Symbol>

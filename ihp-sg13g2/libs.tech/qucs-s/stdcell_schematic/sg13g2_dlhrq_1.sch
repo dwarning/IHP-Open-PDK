@@ -31,7 +31,7 @@
   <Line 10 40 0 -10 #000080 2 1>
   <EArc 5 30 10 -10 0 5760 #000080 2 1>
   <Line -40 0 20 0 #000080 2 1>
-  <.ID 27 55 "DLHRQ">
+  <.ID 27 55 DLHRQ>
   <.PortSym -15 -75 5 0 VDD>
   <.PortSym -10 65 6 0 VSS>
 </Symbol>
