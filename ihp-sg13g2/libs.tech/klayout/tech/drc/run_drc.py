@@ -19,6 +19,7 @@ import os
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import logging
+import klayout
 import klayout.db
 from datetime import datetime, timezone
 import time
@@ -496,6 +497,17 @@ def check_klayout_version():
         exit(1)
 
     logging.info(f"KLayout version detected: {version_str} (required >= {required_str})")
+
+    # Warn if the imported klayout Python package version drifts from the binary.
+    # GUI/menu runs use KLayout's embedded interpreter so this never mismatches there;
+    # this catches CLI setups where the system binary and the pip-installed klayout package diverge.
+    pip_version = getattr(klayout, "__version__", None)
+    if pip_version and pip_version != version_str:
+        logging.warning(
+            f"KLayout binary version ({version_str}) differs from the imported "
+            f"klayout Python package version ({pip_version}). "
+            f"Re-align with: pip install klayout=={version_str}"
+        )
 
 
 def check_layout_path(layout_path: str) -> str:

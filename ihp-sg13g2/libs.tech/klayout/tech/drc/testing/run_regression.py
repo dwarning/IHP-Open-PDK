@@ -29,6 +29,7 @@ from pathlib import Path
 from tqdm import tqdm
 import re
 import gdstk
+import klayout
 import klayout.db
 import errno
 import numpy as np
@@ -171,6 +172,15 @@ def check_klayout_version():
         exit(1)
 
     logging.info(f"KLayout version: {version_str} (required >= {required_str})")
+
+    # Warn if the imported klayout Python package version drifts from the binary.
+    pip_version = getattr(klayout, "__version__", None)
+    if pip_version and pip_version != version_str:
+        logging.warning(
+            f"KLayout binary version ({version_str}) differs from the imported "
+            f"klayout Python package version ({pip_version}). "
+            f"Re-align with: pip install klayout=={version_str}"
+        )
 
 
 def get_switches(yaml_file, rule_name):

@@ -74,6 +74,26 @@ jobs:
           echo "✅ KLayout version:"
           klayout -v
 
+      - name: 🔎 Verify binary and pip klayout versions agree
+        run: |
+          make env
+          EXPECTED="${{ steps.klayout_version.outputs.version }}"
+          BIN_V=$(klayout -b -v | tail -1 | awk '{print $NF}')
+          PIP_V=$(. actions_venv/bin/activate && python3 -c "import klayout; print(klayout.__version__)")
+          echo "Expected (versions.txt):        $EXPECTED"
+          echo "Binary   (klayout -b -v):       $BIN_V"
+          echo "Pip pkg  (klayout.__version__): $PIP_V"
+          fail=0
+          if [ "$BIN_V" != "$EXPECTED" ]; then
+            echo "ERROR: klayout binary ($BIN_V) != versions.txt ($EXPECTED)" >&2
+            fail=1
+          fi
+          if [ "$PIP_V" != "$EXPECTED" ]; then
+            echo "ERROR: klayout pip package ($PIP_V) != versions.txt ($EXPECTED)" >&2
+            fail=1
+          fi
+          exit $fail
+
       - name: 🧪 Run KLayout DRC Regression
         run: make test-DRC-main
 
@@ -184,6 +204,26 @@ jobs:
           sudo apt install ./klayout-${{ steps.klayout_version.outputs.version_underscore }}.deb
           echo "✅ KLayout version:"
           klayout -v
+
+      - name: 🔎 Verify binary and pip klayout versions agree
+        run: |
+          make env
+          EXPECTED="${{ steps.klayout_version.outputs.version }}"
+          BIN_V=$(klayout -b -v | tail -1 | awk '{print $NF}')
+          PIP_V=$(. actions_venv/bin/activate && python3 -c "import klayout; print(klayout.__version__)")
+          echo "Expected (versions.txt):        $EXPECTED"
+          echo "Binary   (klayout -b -v):       $BIN_V"
+          echo "Pip pkg  (klayout.__version__): $PIP_V"
+          fail=0
+          if [ "$BIN_V" != "$EXPECTED" ]; then
+            echo "ERROR: klayout binary ($BIN_V) != versions.txt ($EXPECTED)" >&2
+            fail=1
+          fi
+          if [ "$PIP_V" != "$EXPECTED" ]; then
+            echo "ERROR: klayout pip package ($PIP_V) != versions.txt ($EXPECTED)" >&2
+            fail=1
+          fi
+          exit $fail
 
       - name: 🧪 Run DRC Regression for SG13G2 Cells
         run: make test-DRC-cells

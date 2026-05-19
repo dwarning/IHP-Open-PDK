@@ -29,6 +29,7 @@ from pathlib import Path
 from tqdm import tqdm
 import re
 import gdstk
+import klayout
 import klayout.db
 import numpy as np
 from fnmatch import fnmatch
@@ -93,6 +94,15 @@ def check_klayout_version():
         exit(1)
 
     logging.info(f"KLayout version: {version_str} (required >= {required_str})")
+
+    # Warn if the imported klayout Python package version drifts from the binary.
+    pip_version = getattr(klayout, "__version__", None)
+    if pip_version and pip_version != version_str:
+        logging.warning(
+            f"KLayout binary version ({version_str}) differs from the imported "
+            f"klayout Python package version ({pip_version}). "
+            f"Re-align with: pip install klayout=={version_str}"
+        )
 
 
 def _move_and_rename_golden_files(run_dir: Path, pattern_merged: str, pattern_golden: str):

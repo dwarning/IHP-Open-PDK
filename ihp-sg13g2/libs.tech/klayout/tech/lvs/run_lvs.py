@@ -21,6 +21,7 @@ import argparse
 import os
 from pathlib import Path
 import logging
+import klayout
 import klayout.db
 from datetime import datetime, timezone
 from subprocess import Popen, PIPE, STDOUT
@@ -327,6 +328,16 @@ def check_klayout_version():
         exit(1)
 
     logging.info(f"Your Klayout version is: {klayout_v_} (required >= {required_str})")
+
+    # Warn if the imported klayout Python package version drifts from the binary.
+    binary_version_str = klayout_v_.split(" ")[-1]
+    pip_version = getattr(klayout, "__version__", None)
+    if pip_version and pip_version != binary_version_str:
+        logging.warning(
+            f"KLayout binary version ({binary_version_str}) differs from the imported "
+            f"klayout Python package version ({pip_version}). "
+            f"Re-align with: pip install klayout=={binary_version_str}"
+        )
 
 
 def check_layout_type(layout_path):
